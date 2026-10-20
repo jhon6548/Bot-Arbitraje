@@ -42,7 +42,7 @@ async def arbitraje(update: Update, context: ContextTypes.DEFAULT_TYPE):
     c, v, s = consultar_p2p()
     msg = (
         f"⚡ **Spread P2P USDT/ARS:** `{s}%`\n"
-        f"🛒 Compra: ${c} \vert{} 💰 Venta: ${v}\n\n"
+        f" Compra: ${c} | 💳 Venta: ${v}\n"
         f"💡 *Actualizado en tiempo real.*"
     )
     await update.message.reply_text(msg, parse_mode="Markdown")
